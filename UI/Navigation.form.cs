@@ -20,7 +20,7 @@ namespace ZXY_IMS.UI
         public void NavigateToForm(Form form, Panel panel)
         {
             form.TopLevel = false;
-            //form.Size = panel.Size;
+            form.Size = panel.Size;
             panel.Controls.Clear();
             panel.Controls.Add(form);
             form.Show();
@@ -29,19 +29,19 @@ namespace ZXY_IMS.UI
         private void homeButton_Click(object sender, EventArgs e)
         {
             Home home = new Home();
-            NavigateToForm(home, navFlowLayoutPanel);
+            NavigateToForm(home, contentPanel);
         }
 
         private void productcategoryButton_Click(object sender, EventArgs e)
         {
             ProductCatalog.ProductCategory category = new ProductCatalog.ProductCategory();
-            NavigateToForm(category, navFlowLayoutPanel);
+            NavigateToForm(category, contentPanel);
         }
 
         private void productButton_Click(object sender, EventArgs e)
         {
             ProductCatalog.Product product = new ProductCatalog.Product();
-            NavigateToForm(product, navFlowLayoutPanel);
+            NavigateToForm(product, contentPanel);
         }
 
     }
