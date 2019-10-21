@@ -155,6 +155,7 @@
     <EmbeddedResource Include="UI\ProductCatalog\ProductCategory.form.resx">
       <DependentUpon>ProductCategory.form.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\ZXY_IMS.Models.ProductCategory.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
